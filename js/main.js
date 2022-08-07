@@ -3,7 +3,7 @@ function typeEscrita(elemento) {
     elemento.innerHTML = '';
     textArray.forEach((letra, i) => {
         setTimeout(() =>
-            elemento.innerHTML += letra, 50 * i)
+            elemento.innerHTML += letra, 60 * i);
     });
 
 }

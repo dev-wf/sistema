@@ -66,6 +66,22 @@ footer small a:hover {
     font-size: 1em;
 }
 
+#text::after {
+    content: '|';
+    color: var(--rosa);
+    opacity: 1;
+    animation: pisca 1.0s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
 
 span {
     color: var(--rosa);
