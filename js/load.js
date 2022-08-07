@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     if (counter == 101) {
       clearInterval(i);
-      window.location.href = "../main.html";
+      window.location.href = "sistema/main.html";
     }
   }, 50);
 });
