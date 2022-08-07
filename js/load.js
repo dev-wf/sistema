@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     if (counter == 101) {
       clearInterval(i);
-      window.location.replace(".././main.html");
+      window.location.assign(".././main.html");
     }
   }, 50);
 });
