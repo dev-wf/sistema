@@ -15,9 +15,7 @@ body {
     flex: 1 0 auto;
 }
 
-#text {
-    padding-bottom: 20px;
-}
+
 
 :root {
     --rosa: #f60d54;
@@ -49,6 +47,10 @@ footer small a:hover {
 
 .rosa {
     color: var(--rosa);
+}
+
+.mg {
+    min-height: 100px;
 }
 
 #btnmenu a {
