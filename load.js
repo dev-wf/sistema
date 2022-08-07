@@ -17,5 +17,5 @@ $(document).ready(function () {
       clearInterval(i);
       window.location.href = "./main.html";
     }
-  }, 50);
+  }, 30);
 });
