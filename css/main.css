@@ -15,7 +15,9 @@ body {
     flex: 1 0 auto;
 }
 
-
+#text {
+    padding-bottom: 20px;
+}
 
 :root {
     --rosa: #f60d54;
