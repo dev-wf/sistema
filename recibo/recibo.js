@@ -1,7 +1,9 @@
 
+
+
 $('#emitirNota').click(() => {
     let data = $('#data').val();
-
+    
     let nome = $('#clinome').val();
     let cliDoc = $('#clidoc').val();
 
