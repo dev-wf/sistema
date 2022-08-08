@@ -20,8 +20,13 @@ button {
     width: 120px;
     height: 35px;
     border-radius: 3px;
-    border: 1px solid silver;
+    border: 1px solid rgb(0, 0, 0);
     background: #f5f5f5;
+}
+button:hover{
+    background: #f60d54;
+    box-shadow: 2px 5px dimgray;
+    cursor: pointer;
 }
 
 table {
