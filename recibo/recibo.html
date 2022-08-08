@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./recibo.css">
+
+    <title>WF_Recibo</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="box">
+            <div class="box-cliente">
+                <img src="img/user.png" alt="icone-editar">
+                <input type="text" name="clinome" id="clinome" placeholder="Nome do Cliente">
+            </div>
+
+            <div class="box-cliente">
+                <img src="img/docs.png" alt="icone-documentos">
+                <input type="text" name="clidoc" id="clidoc" placeholder="CPF/CNPJ:">
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-produto">
+                <img src="img/box.png" alt="icone-produto">
+                <input type="text" name="produto" id="produto" placeholder="Ex: Tela Motorola Moto G7 Power">
+            </div>
+
+            <div class="box-produto">
+                <img src="img/etiqueta.png" alt="icone-etiqueta">
+                <input type="text" name="valProduto" id="valProduto" placeholder="Valor do produto">
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-emissor">
+                <img src="img/user.png" alt="icone-editar">
+                <input type="text" name="eminome" id="eminome" placeholder="Nome do Emissor">
+            </div>
+
+            <div class="box-emissor">
+                <img src="img/docs.png" alt="icone-documentos">
+                <input type="text" name="emidoc" id="emidoc" placeholder="CPF/CNPJ:">
+            </div>
+        </div>
+
+        <div class="controls">
+            <a href="table.html">
+                <button id="emitirNota">Emitir Recibo</button>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="./recibo.js"></script>
+</body>
+
+</html>

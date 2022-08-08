@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo valor do produto</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">    
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Scripts/html2canvas.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav>
+        <img src="img/emmit.png" alt="icone-emmit" style="margin-left: 10px;">
+        <h1 style="margin-left: 5px;">Emmit, git[andersonleandrog]</h1>
+    </nav>
+
+    <div id="tab">
+        <table>
+            <tr class="tr">
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+
+            <tr>
+                <td class="nome">Anderson</td>
+                <td class="sobrenome">Leandro</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="tr">
+                <td>Endereco</td>
+                <td>Cidade/Estado</td>
+            </tr>
+
+            <tr>
+                <td class="endereco">Rua ribeirao preto, 104</td>
+                <td class="cidade">Sao Paulo - SP</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="tr">
+                <td>Produto</td>
+                <td>Valor</td>
+            </tr>
+
+            <tr>
+                <td class="produto">Tela Motorola Moto G7 Power</td>
+                <td class="valProduto">R$ 165,00</td>
+            </tr>
+
+            <tr>
+                <td class="maoDeObra">m/o</td>
+                <td class="valMaoDeObra">R$ 80,00</td>
+            </tr>
+
+            <tr>
+                <td>frete</td>
+                <td class="frete">R$ 20,00</td>
+            </tr>
+
+            <tr>
+                <td>total</td>
+                <td class="total">R$ 00,00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    window.addEventListener('load', () => {
+
+        function cookieParser(cookieString) {
+            
+            // Retorna um objeto vazio se nao tiver nada no cookie
+            if (cookieString === "")
+                return {};
+
+            // Obtem os valores individuais dos pares da key-value
+            // da string cookie
+            // Retorna um novo array
+            let pairs = cookieString.split(";")
+
+            // Separate keys from values in each pair string
+            // Returns a new array which looks like
+            // [[key1,value1], [key2,value2], ...]
+            let splittedPairs = pairs.map(cookie => cookie.split("="))
+
+
+            // Create an object with all key-value pairs
+            const cookieObj = splittedPairs.reduce(function (obj, cookie) {
+
+                // cookie[0] is the key of cookie
+                // cookie[1] is the value of the cookie
+                // decodeURIComponent() decodes the cookie
+                // string, to handle cookies with special
+                // characters, e.g. '$'.
+                // string.trim() trims the blank spaces
+                // auround the key and value.
+                obj[decodeURIComponent(cookie[0].trim())]
+                    = decodeURIComponent(cookie[1].trim())
+
+                return obj;
+            }, {})
+
+            return cookieObj
+            }
+
+            let dummyCookieString = document.cookie
+
+            // Pass document.cookie to retrieve actual cookies
+            let cookieObj = cookieParser(dummyCookieString)
+
+            $('.nome').html(`${cookieObj['firstName']}`)
+            $('.sobrenome').html(`${cookieObj['secondName']}`)
+
+            $('.endereco').html(`${cookieObj['adress']}`)
+            $('.cidade').html(`${cookieObj['city']}`)
+
+            $('.produto').html(`${cookieObj['product']}`)
+            $('.valProduto').html(`R$ ${cookieObj['productValue']}`)
+
+            $('.maoDeObra').html(`${cookieObj['labor']}`)
+            $('.valMaoDeObra').html(`R$ ${cookieObj['laborValue']}`)
+
+            $('.frete').html(`R$ ${cookieObj['freight']}`)
+            $('.total').html(`R$ ${cookieObj['total']}`)
+        })
+
+        cookieString(document.cookie)
+</script>
+</html>
