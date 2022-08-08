@@ -15,10 +15,17 @@ $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
 //MASCARA DINHEIRO:
 $("#valProduto").maskMoney();
 
-
+//DATA ATUAL
+const date = new Date().toLocaleDateString();
 // BOTAO EMITIR NOTA:
 $('#emitirNota').click(() => {
-    let data = $('#data').val();
+    let data = $('#data').val().split('-').reverse().join('/');
+    if (data == '') {
+        console.log(date);
+    } else {
+        data
+    }
+
 
     let nome = $('#clinome').val();
     let cliDoc = $('#clidoc').val();
