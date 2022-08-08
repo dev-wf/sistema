@@ -18,6 +18,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
+
     <link rel="stylesheet" href="./recibo.css">
 
     <title>WF_Recibo</title>
@@ -34,24 +36,24 @@
         <div class="box">
             <div class="box-cliente">
                 <img src="img/user.png" alt="icone-editar">
-                <input type="text" name="clinome" id="clinome" placeholder="Nome do Cliente">
+                <input required type="text" name="clinome" id="clinome" placeholder="Nome do Cliente">
             </div>
 
             <div class="box-cliente">
                 <img src="img/docs.png" alt="icone-documentos">
-                <input type="text" name="clidoc" id="clidoc" placeholder="CPF/CNPJ:" data-mask-for-cpf-cnpj>
+                <input type="text" name="clidoc" id="clidoc" placeholder="CPF/CNPJ:" data-mask-for-cpf-cnpj required>
             </div>
         </div>
         <div class="box">
             <div class="box-produto">
                 <img src="img/box.png" alt="icone-produto">
-                <input type="text" name="produto" id="produto" placeholder="Ex: Pagamento Aluguel">
+                <input type="text" name="produto" id="produto" placeholder="Ex: Pagamento Aluguel" required>
             </div>
 
             <div class="box-produto">
                 <img src="img/etiqueta.png" alt="icone-etiqueta">
                 <input type="text" name="valProduto" id="valProduto" placeholder="Valor do produto" data-thousands="."
-                    data-decimal="," data-prefix="R$ ">
+                    data-decimal="," data-prefix="R$ " required>
             </div>
         </div>
         <div class="box">

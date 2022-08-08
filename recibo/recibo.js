@@ -35,6 +35,13 @@ $('#emitirNota').click(() => {
 
     let eminome = $('#eminome').val();
     let emiDoc = $('#emidoc').val();
+    if (eminome == '' && emiDoc == '') {
+        eminome = "WF TECH-Developer";
+        emiDoc = "43.652.172/0001-52";
+    } else {
+        eminome;
+        emiDoc
+    }
 
     console.log(data);
     console.log(nome);
@@ -44,6 +51,5 @@ $('#emitirNota').click(() => {
     console.log(eminome);
     console.log(emiDoc);
 
-
-
 })
+
