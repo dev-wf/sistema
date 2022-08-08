@@ -12,6 +12,12 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
     <link rel="stylesheet" href="./recibo.css">
 
     <title>WF_Recibo</title>
@@ -33,7 +39,7 @@
 
             <div class="box-cliente">
                 <img src="img/docs.png" alt="icone-documentos">
-                <input type="text" name="clidoc" id="clidoc" placeholder="CPF/CNPJ:">
+                <input type="text" name="clidoc" id="clidoc" placeholder="CPF/CNPJ:" data-mask-for-cpf-cnpj>
             </div>
         </div>
         <div class="box">
@@ -44,7 +50,8 @@
 
             <div class="box-produto">
                 <img src="img/etiqueta.png" alt="icone-etiqueta">
-                <input type="text" name="valProduto" id="valProduto" placeholder="Valor do produto">
+                <input type="text" name="valProduto" id="valProduto" placeholder="Valor do produto" data-thousands="."
+                    data-decimal="," data-prefix="R$ ">
             </div>
         </div>
         <div class="box">
@@ -55,7 +62,7 @@
 
             <div class="box-emissor">
                 <img src="img/docs.png" alt="icone-documentos">
-                <input type="text" name="emidoc" id="emidoc" placeholder="CPF/CNPJ:">
+                <input type="text" name="emidoc" id="emidoc" placeholder="CPF/CNPJ:" data-mask-for-cpf-cnpj>
             </div>
         </div>
 
@@ -68,7 +75,8 @@
     <div class="sair">
         <a class="btn btn-sm danger" href="../main.html">SAIR</a>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="./recibo.js"></script>
 </body>
