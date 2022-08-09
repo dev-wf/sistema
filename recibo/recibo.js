@@ -1,3 +1,4 @@
+console.log("RECIBO.JS");
 // MASCARA CPF E CNPJ
 $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
 
@@ -18,7 +19,7 @@ $("#valProduto").maskMoney();
 //DATA ATUAL
 const date = new Date().toLocaleDateString();
 // BOTAO EMITIR NOTA:
-$('#emitirNota').click(() => {
+$().click(() => {
     let data = $('#data').val().split('-').reverse().join('/');
     if (data == '') {
         console.log(date);
