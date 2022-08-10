@@ -22,6 +22,22 @@ function set() {
     });
     localStorage.setItem("recibodb", JSON.stringify(dados));
 };
+// verificar se  é mobile ou nao:
+function celular() {
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true; // está utilizando celular
+    }
+    else {
+        return false; // não é celular
+    }
+}
 
 // LOCAL STORAGE GET ITE M: 
 function get() {
@@ -56,11 +72,13 @@ function get() {
         $("#getEmi").html(db.emissor);
         $("#getDocEmi").html(db.docEmissor);
     }
-    window.print();
-    setTimeout(function () {
-        alert('Obrigado por usar nosso sistema! :)');
-        window.location.assign('./recibo.html');
-    }, 1000);
+    if (celular() == false) {
+        window.print();
+        setTimeout(function () {
+            alert('Obrigado por usar nosso sistema! :)');
+            window.location.assign('./recibo.html');
+        }, 1000);
+    }
 
 }
 $("#emitirNota").click(function (e) {
