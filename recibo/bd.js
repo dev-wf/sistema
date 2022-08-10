@@ -1,6 +1,5 @@
 console.log("BD.js");
-//DATA ATUAL
-const atual = new Date().toLocaleDateString();
+
 // LOCAL STORAGE SET ITEM: 
 function set() {
     /*
@@ -26,7 +25,6 @@ function set() {
 
 // LOCAL STORAGE GET ITE M: 
 function get() {
-    var x = $('#data').val();
     //Pega o registro STORAGE no localstorage.
     var registro = localStorage.getItem("recibodb");
     var parse = JSON.parse(registro);
@@ -38,18 +36,20 @@ function get() {
     console.log(db.valor);
     console.log(db.emissor);
     console.log(db.docEmissor);
-    console.log(x);
-    /* if (x.value == '') {
-        atual.split('-').reverse().join('/') } else {
-        $("#getData").text(db.data.split('-').reverse().join('/'));}
-     */
-    $("#getData").text(db.data.split('-').reverse().join('/'));
+    var date = new Date();
+    var hoje = date.toLocaleDateString();
+    console.log(hoje);
+    if (db.data == "") {
+        $("#getData").text(hoje.split('-').reverse().join('/'));
+    } else {
+        $("#getData").text(db.data.split('-').reverse().join('/'));
+    }
     $("#getCli").html(db.cliente);
     $("#getDoC").html(db.docCliente);
     $("#getReferente").html(db.referente);
-    // $("#pValor").html(db.valor);
-    //  $("#pEmissor").html(db.emissor);
-    //  $("#pDocEmissor").html(db.docEmissor);
+    $("#getValor").text(db.valor);
+    $("#getEmi").html(db.emissor);
+    $("#getDocEmi").html(db.docEmissor);
 
 
 }
