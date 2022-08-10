@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
     <link rel="shortcut icon" href="./img/docs.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
@@ -25,10 +25,15 @@
     </style>
 </head>
 
-<body class="text-center">
+<body class="text-center" onload="get()">  
     <div class="container print">
         <h3>Recibo de Pagamento</h3>
-        <ul class="list-inline">
+        <ul class="list-inline">        
+            <li class="list-inline-item d-flex">
+                <span id="getData">data</span>
+            </li>
+        </ul>
+        <ul class="list-inline">    
             <li class="list-inline-item">Recebi(emos) de <span id="getCli">Cliente</span> - CPF/CNPJ nº <span
                     id="getDoC">437.168.168-92</span>,
                 referente à <span id="getReferente">Computador</span>.
@@ -39,7 +44,6 @@
         </ul>
     </div>
 
-    <button type="button" name="teste" id="teste" class="btn btn-primary">Button</button>
 
 
 
