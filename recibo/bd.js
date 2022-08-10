@@ -56,11 +56,11 @@ function get() {
         $("#getEmi").html(db.emissor);
         $("#getDocEmi").html(db.docEmissor);
     }
-    window.print();
+   /* window.print();
     setTimeout(function () {
         alert('Obrigado por usar nosso sistema! :)');
         window.location.assign('./recibo.html');
-    }, 1000);
+    }, 1000);/*
 
 }
 $("#emitirNota").click(function (e) {
