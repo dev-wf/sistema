@@ -18,9 +18,15 @@
 
 
     <style>
+        .borda {
+            max-width: 900px;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+
         .print {
             max-width: 600px;
-            background-color: aquamarine;
+
         }
 
         .contAss {
@@ -33,44 +39,46 @@
 
         #assinatura {
             width: 200px;
-            border: 1px solid #000;
+            border: 2px solid #000;
         }
     </style>
 </head>
 
 <body class="text-center" onload="get()">
-    <div class="container print">
-        <h3>Recibo de Pagamento</h3>
-        <ul class="list-inline">
-            <li class="list-inline-item d-flex justify-content-around">
-                <span id="getData">data</span>
-                <b> <span id="getValor">00,00</span></b>
-            </li>
-        </ul>
-        <ul class="list-inline">
-            <li class="list-inline-item">Recebi(emos) de <span id="getCli">Cliente</span> - CPF/CNPJ nº <span
-                    id="getDoC">437.168.168-92</span>,
-                referente à <span id="getReferente">Computador</span>.
-            </li>
-            <li class="list-inline-item">Para maior clareza firmo(amos) o presente recibo para que produza os seus
-                efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.
-            </li>
+    <div class="borda">
+        <div class="container print  ">
+            <h2>Recibo de Pagamento</h2>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item d-flex justify-content-around">
+                    <span id="getData">data</span>
+                    <b><span id="getValor">00,00</span></b>
+                </li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item">Recebi(emos) de <b><span id="getCli">Cliente</span></b> - CPF/CNPJ nº
+                    <b><span id="getDoC">437.168.168-92</span></b>,
+                    referente à <b><span id="getReferente">Computador</span></b>.
+                </li>
+                <li class="list-inline-item">Para maior clareza firmo(amos) o presente recibo para que produza os seus
+                    efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.
+                </li>
 
-            <li class="list-inline-item contAss">
-                <br>
-                <span id="getEmi">
-                    WF TECH
-                </span>
-                <br>
-                <div id="assinatura"></div>
-                <span id="getDocEmi">
-                    CNPJ: 43.652.172/0001
-                </span>
+                <li class="list-inline-item contAss">
+                    <br>
+                    <span id="getEmi">
+                        WF TECH
+                    </span>
+                    <br>
+                    <div id="assinatura"></div>
+                    <span id="getDocEmi">
+                        CNPJ: 43.652.172/0001
+                    </span>
 
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-
 
 
 

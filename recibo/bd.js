@@ -25,6 +25,7 @@ function set() {
 
 // LOCAL STORAGE GET ITE M: 
 function get() {
+
     //Pega o registro STORAGE no localstorage.
     var registro = localStorage.getItem("recibodb");
     var parse = JSON.parse(registro);
@@ -48,9 +49,18 @@ function get() {
     $("#getDoC").html(db.docCliente);
     $("#getReferente").html(db.referente);
     $("#getValor").text(db.valor);
-    $("#getEmi").html(db.emissor);
-    $("#getDocEmi").html(db.docEmissor);
-
+    if (db.emissor == "" || db.docEmissor == "") {
+        $("#getEmi").html("WF TECH-Developer");
+        $("#getDocEmi").html("43.652.172/0001-52");
+    } else {
+        $("#getEmi").html(db.emissor);
+        $("#getDocEmi").html(db.docEmissor);
+    }
+    window.print();
+    setTimeout(function () {
+        alert('Obrigado por usar nosso sistema! :)');
+        window.location.assign('./recibo.html');
+    }, 1000);
 
 }
 $("#emitirNota").click(function (e) {
