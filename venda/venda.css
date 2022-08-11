@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  height: 100%;
+  background: #000000;
+  background: linear-gradient(to right, #161616, #0d0d0d);
+}
+
+
+:root {
+  --rosa: #f60d54;
+}
+
+footer {
+  font-size: 12px;
+}
+
+footer small {
+  color: aliceblue;
+}
+
+footer small a {
+  color: #f60d54;
+}
+
+footer small a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
