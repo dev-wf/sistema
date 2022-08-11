@@ -1,3 +1,4 @@
+
 console.log("RECIBO.JS");
 // MASCARA CPF E CNPJ
 $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
@@ -15,6 +16,7 @@ $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
 
 //MASCARA DINHEIRO:
 $("#valProduto").maskMoney();
+
 
 
 

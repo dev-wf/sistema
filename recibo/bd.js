@@ -82,6 +82,7 @@ function get() {
 
 }
 $("#emitirNota").click(function (e) {
+
     set();
     window.location = "./imprimir.html";
     e.preventDefault();
