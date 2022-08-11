@@ -81,10 +81,20 @@ function get() {
     }
 
 }
-$("#emitirNota").click(function (e) {
+/*$("#emitirNota").click(function (e) {
 
+    set();
+   // window.location = "./imprimir.html";
+    e.preventDefault();
+
+});*/
+
+
+const form = document.querySelector("#imprimir");
+form.addEventListener("submit", function (e) {
     set();
     window.location = "./imprimir.html";
     e.preventDefault();
+
 
 });
