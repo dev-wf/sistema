@@ -14,6 +14,10 @@ body {
   color: var(--rosa);
 }
 
+main {
+  width: 100%;
+
+}
 
 footer {
   font-size: 12px;
