@@ -8,17 +8,17 @@ html,
 body {
   width: 100%;
   font-family: "Roboto Mono", monospace;
-  height: 100%;
   background: #000000;
-  background: linear-gradient(to right, #161616, #0d0d0d);
+  padding: 1vh;
+  margin: 1vh;
   color: var(--rosa);
 }
 header {
   text-align: center;
 }
 
-main {
-  margin: 25px;
+.bg {
+  text-align: center;
 }
 
 footer {

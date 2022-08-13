@@ -22,14 +22,13 @@
 
 </head>
 
-<body>
-  <header>header</header>
+<body class="text-center">
 
-  <main>
+  <main class="container">
 
-    <form action="">
-      <table class="table table-light">
-        <thead class="thead-light ">
+    <form class="bg" action="">
+      <table class="table table-sm table-light">
+        <thead class="thead-light">
           <tr>
             <th>Quantidade</th>
             <th>Unid.</th>
@@ -41,7 +40,7 @@
         <tbody>
           <!--Linha 1-->
           <tr>
-            <td>10</td>
+            <td id="quant1" contenteditable="true">10</td>
             <td>
               <select name="unid" id="unid">
                 <option value="SV">SV</option>
@@ -49,12 +48,28 @@
               </select>
             </td>
             <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td>5,00</td>
+            <td id="unit1" contenteditable="true">5,00</td>
             <td>50,00</td>
           </tr>
+          <button id="teste" c>test</button>
+          <script>
+            $('#teste').click(function (e) {
+              var ed = document.getElementById('quant1');
+              var un = document.getElementById('unit1');
+              var ex = parseInt(ed.textContent);
+              var ey = parseInt(un.textContent);
+              console.log(ex);
+              console.log(ey);
+              var esx = ex * ey;
+              console.log(esx);
+              e.preventDefault();
+
+            });
+
+          </script>
           <!--Linha 2-->
           <tr>
-            <td>10</td>
+            <td class="quantidade">10</td>
             <td>
               <select name="unid" id="unid">
                 <option value="SV">SV</option>
@@ -67,7 +82,7 @@
           </tr>
           <!--Linha 3-->
           <tr>
-            <td>10</td>
+            <td class="quantidade">10</td>
             <td>
               <select name="unid" id="unid">
                 <option value="SV">SV</option>
@@ -80,7 +95,7 @@
           </tr>
           <!--Linha 4-->
           <tr>
-            <td>10</td>
+            <td class="quantidade">10</td>
             <td>
               <select name="unid" id="unid">
                 <option value="SV">SV</option>
@@ -93,7 +108,7 @@
           </tr>
           <!--Linha 5-->
           <tr>
-            <td>10</td>
+            <td class="quantidade">10</td>
             <td>
               <select name="unid" id="unid">
                 <option value="SV">SV</option>
@@ -127,21 +142,6 @@
 
 
 
-
-  <footer class="fixed-bottom bdanger py-1 bg-dark text-white-50">
-
-    <div class="container text-center">
-
-      <small class="text-muted mb-2">
-        <i class="bi foneIcons  text-warning bi-code-slash"></i> Desenvolvido com <i
-          class="  foneIcons text-danger bi bi-heart"></i>
-        por <strong> <a class="text-decoration-none" href="#">Welington Fernandes</a></strong>
-      </small>
-
-    </div>
-
-
-  </footer>
   <!-- SCRIPTS -->
   <script src="./bootstrap.bundle.min.js"></script>
   <script src="./venda.js"></script>
