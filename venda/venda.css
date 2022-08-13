@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap');
-
+:root {
+  --rosa: #f60d54;
+}
 html,
 body {
   font-family: 'Roboto Mono', monospace;
   height: 100%;
   background: #000000;
   background: linear-gradient(to right, #161616, #0d0d0d);
+  color: var(--rosa);
 }
 
 
-:root {
-  --rosa: #f60d54;
-}
 
 footer {
   font-size: 12px;
