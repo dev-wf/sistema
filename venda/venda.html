@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./bootstrap.min.css">
 
   <link rel="stylesheet" href="./venda.css">
+  <link rel="stylesheet" href="./form.css">
 
   <title>WF-Developer</title>
 
@@ -26,104 +27,397 @@
 
   <main class="container">
 
-    <form id="formulario" class="bg">
-      <table class="table table-sm table-light">
-        <thead class=" ">
-          <tr>
-            <th class="quantidade">Quantidade</th>
-            <th>Unid.</th>
-            <th>Descrição</th>
-            <th>Preço unid</th>
-            <th>Valor Total</th>
+    <div class="ritz grid-container" dir="ltr">
+      <table class="waffle no-grid" cellspacing="0" cellpadding="0">
+        <thead class="">
+          <tr style="height: 61px">
+
+            <td class="s0 softmerge">
+              <div class="softmerge-inner" style="width:290px;left:-1px">[Razão Social]</div>
+            </td>
+            <td class="s1"></td>
+            <td class="s2"></td>
+            <td class="s2"></td>
+            <td class="s3"></td>
+            <td class="s4"></td>
+            <td class="s5" dir="ltr" colspan="2">RECIBO</td>
+          </tr>
+
+
+          <tr style="height: 25px">
+
+            <td class="s6 softmerge">
+              <div class="softmerge-inner" style="width:290px;left:-1px">Telefone: (11) 95316-4286</div>
+            </td>
+            <td class="s9"></td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s12"></td>
+            <td class="s13" colspan="2"></td>
+            <td class="s13">DATA</td>
+          </tr>
+          <tr style="height: 25px">
+
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s14" colspan="2"></td>
+            <td class="s14">2/21/2018</td>
+          </tr>
+          <tr style="height: 19px">
+
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+          </tr>
+          <tr style="height: 25px">
+
+            <td class="s16" colspan="3">COBRAR DE</td>
+            <td class="s8"></td>
+            <td class="s17"></td>
+            <td class="s13" colspan="2">ID DO CLIENTE</td>
+            <td class="s13">TERMOS</td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s8">[Nome]</td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s14" colspan="2">564</td>
+            <td class="s19 softmerge">
+              <div class="softmerge-inner" style="width:249px;left:-14px">Vence no recebimento</div>
+            </td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s20 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">[Razão Social]</div>
+            </td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s20 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">[Endereço]</div>
+            </td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s20 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">[Cidade, Estado, CEP]</div>
+            </td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s20 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">[Telefone]</div>
+            </td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s20 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">[Endereço de email]</div>
+            </td>
+            <td class="s10"></td>
+            <td class="s10"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
           </tr>
         </thead>
         <tbody>
-          <!--Linha 1-->
-          <tr>
-            <td><input maxlength="4" inputmode="numeric" type="text" id="quantidadeUm" class="quantidade"></td>
-            <td>
-              <select id="selectUm">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
+
+          <tr style="height: 19px">
+
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+            <td class="s15"></td>
+          </tr>
+          <tr style="height: 25px">
+
+            <td class="s21 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">DESCRIÇÃO</div>
             </td>
-            <td><input type="text" id="descricaoUm" class="descricao"></td>
-            <td><input type="text" id="unitarioUm" class="valorU"></td>
-            <td><input type="text" id="totalUm" class="valorT"></td>
+            <td class="s22"></td>
+            <td class="s22"></td>
+            <td class="s16"></td>
+            <td class="s16"></td>
+            <td class="s13">QTD</td>
+            <td class="s13">PREÇO UNID.</td>
+            <td class="s13">VALOR</td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s23 softmerge">
+              <div class="softmerge-inner" style="width:150px;left:-1px">Taxa de serviço</div>
+            </td>
+            <td class="s24"></td>
+            <td class="s24"></td>
+            <td class="s25"></td>
+            <td class="s26"></td>
+            <td class="s27" dir="ltr">3</td>
+            <td class="s28"> 200,00 </td>
+            <td class="s29"> 600,00 </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s23 softmerge">
+              <div class="softmerge-inner" style="width:290px;left:-1px">Mão de obra: 5 horas a R$ 75,00/hora
+              </div>
+            </td>
+            <td class="s30"></td>
+            <td class="s24"></td>
+            <td class="s24"></td>
+            <td class="s26"></td>
+            <td class="s27" dir="ltr">3</td>
+            <td class="s28"> 75,00 </td>
+            <td class="s31"> 225,00 </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s23 softmerge">
+              <div class="softmerge-inner" style="width:290px;left:-1px">Desconto para novo cliente</div>
+            </td>
+            <td class="s30"></td>
+            <td class="s24"></td>
+            <td class="s24"></td>
+            <td class="s26"></td>
+            <td class="s27" dir="ltr">2</td>
+            <td class="s28" dir="ltr"> 5,00 </td>
+            <td class="s31"> 10,00 </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s32"></td>
+            <td class="s26"></td>
+            <td class="s27"></td>
+            <td class="s26"></td>
+            <td class="s31"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s33"></td>
+            <td class="s33"></td>
+            <td class="s33"></td>
+            <td class="s33"></td>
+            <td class="s34"></td>
+            <td class="s35"></td>
+            <td class="s34"></td>
+            <td class="s36"> - </td>
+          </tr>
+          <tr style="height: 26px">
+
+            <td class="s37"></td>
+            <td class="s38"></td>
+            <td class="s38"></td>
+            <td class="s38"></td>
+            <td class="s39"></td>
+            <td class="s40" colspan="2">TOTAL</td>
+            <td class="s41" dir="ltr">R$ 835,00</td>
+          </tr>
+          <tr style="height: 20px">
+
+            <td class="s8"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s42"></td>
+            <td class="s42"></td>
+            <td class="s42"></td>
+          </tr>
+          <tr style="height: 17px">
+
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+            <td class="s18"></td>
+          </tr>
+          <tr style="height: 17px">
+
+            <td class="s43" dir="ltr" colspan="8">Se você tiver alguma dúvida, entre em contato</td>
+          </tr>
+          <tr style="height: 17px">
+
+            <td class="s44" dir="ltr" colspan="8">w.a.f@outlook.com.br
+              <br>
+              <button id="print">IMPRIMIR</button>
+              <script>
+                $("#print").click(function (e) {
+                  $("#print").hide();
+                  print();
+                  e.preventDefault();
+                });
+              </script>
+            </td>
+
           </tr>
 
-          <!--Linha 2-->
-          <tr>
-            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeDois" class="quantidade">
-            </td>
-            <td>
-              <select id="selectDois">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td><input type="text" id="descricaoDois" class="descricao"></td>
-            <td><input type="text" id="unitarioDois" class="valorU"></td>
-            <td><input type="text" id="totalDois" class="valorT"></td>
-          </tr>
 
-          <!--Linha 3-->
-          <tr>
-            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeTres" class="quantidade">
-            </td>
-            <td>
-              <select id="selectTres">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td><input type="text" id="descricaoTres" class="descricao"></td>
-            <td><input type="text" id="unitarioTres" class="valorU"></td>
-            <td><input type="text" id="totalTres" class="valorT"></td>
-          </tr>
 
-          <!--Linha 4-->
-          <tr>
-            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeQuatro" class="quantidade">
-            </td>
-            <td>
-              <select id="selectQuatro">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td><input type="text" id="descricaoQuatro" class="descricao"></td>
-            <td><input type="text" id="unitarioQuatro" class="valorU"></td>
-            <td><input type="text" id="totalQuatro" class="valorT"></td>
-          </tr>
-
-          <!--Linha 5-->
-          <tr>
-            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeCinco" class="quantidade">
-            </td>
-            <td>
-              <select id="selectCinco">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td><input type="text" id="descricaoCinco" class="descricao"></td>
-            <td><input type="text" id="unitarioCinco" class="valorU"></td>
-            <td><input type="text" id="totalCinco" class="valorT"></td>
-          </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th class="finalT">TOTAL:</th>
-            <th id="SomaTotal" class="finalT">1000,00</th>
-          </tr>
-        </tfoot>
       </table>
-      <button id="imprimir">IMPRIMIR</button>
-    </form>
+    </div>
 
 
 
