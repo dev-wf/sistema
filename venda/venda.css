@@ -16,9 +16,51 @@ body {
 header {
   text-align: center;
 }
-
-.bg {
+main {
+  display: flex;
+  justify-content: center;
+}
+form {
+  font-size: 10pt;
+  max-width: 800px;
+}
+form table input {
   text-align: center;
+  border: 0.5px solid #f60d54;
+}
+
+form table input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0.5px solid #f60d54;
+  outline: 0;
+}
+form table select {
+  height: 24px;
+  text-align: center;
+  border: 0.5px solid #f60d54;
+}
+form table select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0.5px solid #f60d54;
+  outline: 0;
+}
+
+.quantidade {
+  width: 100px;
+}
+.descricao {
+  width: 500px;
+}
+.valorU {
+  width: 100px;
+}
+.valorT {
+  width: 100px;
+}
+
+.finalT {
+  text-align: end;
+  font-size: 20px;
 }
 
 footer {

@@ -26,11 +26,11 @@
 
   <main class="container">
 
-    <form class="bg" action="">
+    <form id="formulario" class="bg">
       <table class="table table-sm table-light">
-        <thead class="thead-light">
+        <thead class=" ">
           <tr>
-            <th>Quantidade</th>
+            <th class="quantidade">Quantidade</th>
             <th>Unid.</th>
             <th>Descrição</th>
             <th>Preço unid</th>
@@ -40,81 +40,89 @@
         <tbody>
           <!--Linha 1-->
           <tr>
-            <td id="quant1" contenteditable="true">10</td>
+            <td><input maxlength="4" inputmode="numeric" type="text" id="quantidadeUm" class="quantidade"></td>
             <td>
-              <select name="unid" id="unid">
+              <select id="selectUm">
                 <option value="SV">SV</option>
                 <option value="PÇ">PÇ</option>
               </select>
             </td>
-            <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td id="unit1" contenteditable="true">5,00</td>
-            <td>50,00</td>
-          </tr>
-          <!--Linha 2-->
-          <tr>
-            <td class="quantidade">10</td>
-            <td>
-              <select name="unid" id="unid">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td>5,00</td>
-            <td>50,00</td>
-          </tr>
-          <!--Linha 3-->
-          <tr>
-            <td class="quantidade">10</td>
-            <td>
-              <select name="unid" id="unid">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td>5,00</td>
-            <td>50,00</td>
-          </tr>
-          <!--Linha 4-->
-          <tr>
-            <td class="quantidade">10</td>
-            <td>
-              <select name="unid" id="unid">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td>5,00</td>
-            <td>50,00</td>
-          </tr>
-          <!--Linha 5-->
-          <tr>
-            <td class="quantidade">10</td>
-            <td>
-              <select name="unid" id="unid">
-                <option value="SV">SV</option>
-                <option value="PÇ">PÇ</option>
-              </select>
-            </td>
-            <td>Computador intel core i5/ssd 240gb/4gb ram</td>
-            <td>5,00</td>
-            <td>50,00</td>
+            <td><input type="text" id="descricaoUm" class="descricao"></td>
+            <td><input type="text" id="unitarioUm" class="valorU"></td>
+            <td><input type="text" id="totalUm" class="valorT"></td>
           </tr>
 
+          <!--Linha 2-->
+          <tr>
+            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeDois" class="quantidade">
+            </td>
+            <td>
+              <select id="selectDois">
+                <option value="SV">SV</option>
+                <option value="PÇ">PÇ</option>
+              </select>
+            </td>
+            <td><input type="text" id="descricaoDois" class="descricao"></td>
+            <td><input type="text" id="unitarioDois" class="valorU"></td>
+            <td><input type="text" id="totalDois" class="valorT"></td>
+          </tr>
+
+          <!--Linha 3-->
+          <tr>
+            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeTres" class="quantidade">
+            </td>
+            <td>
+              <select id="selectTres">
+                <option value="SV">SV</option>
+                <option value="PÇ">PÇ</option>
+              </select>
+            </td>
+            <td><input type="text" id="descricaoTres" class="descricao"></td>
+            <td><input type="text" id="unitarioTres" class="valorU"></td>
+            <td><input type="text" id="totalTres" class="valorT"></td>
+          </tr>
+
+          <!--Linha 4-->
+          <tr>
+            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeQuatro" class="quantidade">
+            </td>
+            <td>
+              <select id="selectQuatro">
+                <option value="SV">SV</option>
+                <option value="PÇ">PÇ</option>
+              </select>
+            </td>
+            <td><input type="text" id="descricaoQuatro" class="descricao"></td>
+            <td><input type="text" id="unitarioQuatro" class="valorU"></td>
+            <td><input type="text" id="totalQuatro" class="valorT"></td>
+          </tr>
+
+          <!--Linha 5-->
+          <tr>
+            <td><input maxlength="4" inputmode="numeric" type="text" name="" id="quantidadeCinco" class="quantidade">
+            </td>
+            <td>
+              <select id="selectCinco">
+                <option value="SV">SV</option>
+                <option value="PÇ">PÇ</option>
+              </select>
+            </td>
+            <td><input type="text" id="descricaoCinco" class="descricao"></td>
+            <td><input type="text" id="unitarioCinco" class="valorU"></td>
+            <td><input type="text" id="totalCinco" class="valorT"></td>
+          </tr>
         </tbody>
         <tfoot>
           <tr>
             <th></th>
             <th></th>
             <th></th>
-            <th>TOTAL:</th>
-            <th>1000,00</th>
+            <th class="finalT">TOTAL:</th>
+            <th id="SomaTotal" class="finalT">1000,00</th>
           </tr>
         </tfoot>
       </table>
+      <button id="imprimir">IMPRIMIR</button>
     </form>
 
 
