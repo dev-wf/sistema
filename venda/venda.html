@@ -23,8 +23,48 @@
 
 </head>
 <main class="container">
+  <h1>CONTEUDO PRINCIPAL</h1>
 
-  <h2>CONTEUDO PRINCIPAL</h2>
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th class="quantidade" scope="col">QUANT</th>
+        <th scope="col">PRODUTO/SERVIÇO</th>
+        <th scope="col">UNIT</th>
+        <th scope="col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="quantidade">2</td>
+        <td class="produto">MANUTENCAO PREVENTIVA</td>
+        <td class="unitario">R$50,00</td>
+        <td class="total">R$100,00</td>
+      </tr>
+
+      <tr>
+        <td class="quantidade">
+          <input id="quant1" type="text"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="4"
+            maxlength="4" />
+        </td>
+        <td class="produto"><input size="50" type="text" name="" maxlength="50" id=""></td>
+        <td class="unitario">R$ <input id="quant1" type="text"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="10"
+            maxlength="10" /></td>
+        <td class="total">R$ <input id="quant1" type="text"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="10"
+            maxlength="10" /></td>
+      </tr>
+
+      <tr>
+        <td class="produto" colspan="3"></td>
+        <td>TOTAL</td>
+      </tr>
+    </tbody>
+  </table>
+
+
 
 </main>
 <br>

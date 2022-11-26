@@ -15,7 +15,7 @@ body {
 }
 main {
   text-align: center;
-  width: 600px;
+  max-width: 720px;
   height: 600px;
   background-color: #ffffff;
 }
@@ -36,4 +36,37 @@ footer small a {
 footer small a:hover {
   color: #ffffff;
   cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.quantidade {
+  max-width: 20px;
+}
+.produto {
+  max-width: 200px;
+}
+.unitario {
+  text-align: center;
+  max-width: 40px;
+}
+.total {
+  text-align: center;
+  max-width: 40px;
+}
+
+/* Chrome e outros */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
