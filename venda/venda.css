@@ -70,3 +70,20 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.celular {
+  display: none;
+}
+/*  Telas menores que 600px */
+@media screen and (max-width: 600px) {
+  main {
+    display: none;
+  }
+  footer #print {
+    display: none;
+  }
+  .celular {
+    display: grid;
+    background-color: #f60d54;
+  }
+}
