@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
-html,
-body {
+*,
+html {
+  margin: 0;
   padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
   background: #252a34; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -13,6 +18,10 @@ body {
     #141e30,
     #000e29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: "Roboto Mono", monospace;
   color: rgb(255, 255, 255);
 }
+header {
+  text-align: center;
+  height: 50px;
+}
+
