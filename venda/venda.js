@@ -9,8 +9,17 @@ console.log('venda.js');
 
 })); */
 
+function numberIs(a) {
+    a.value = a.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+}
 
 
-$("#quant1").keyup(function (e) {
-    console.log($("#quant1").val());
+$("#uni1").keyup(function (e) {
+    //window.alert($("#uni1").val());
+    $("#uni1").maskMoney({ thousands: '.', decimal: ',' });
+});
+
+$("#tot1").keyup(function (e) {
+    //window.alert($("#uni1").val());
+    $("#tot1").maskMoney({ thousands: '.', decimal: ',' });
 });

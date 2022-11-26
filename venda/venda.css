@@ -52,11 +52,11 @@ input {
   max-width: 200px;
 }
 .unitario {
-  text-align: center;
+  text-align: left;
   max-width: 40px;
 }
 .total {
-  text-align: center;
+  text-align: left;
   max-width: 40px;
 }
 

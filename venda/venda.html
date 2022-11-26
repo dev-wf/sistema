@@ -23,9 +23,10 @@
 
 </head>
 <main class="container">
-  <h1>CONTEUDO PRINCIPAL</h1>
-
-  <table class="table table-bordered table-sm">
+  <div class="container bg-info h-25 p-1">
+    <h1>CONTEUDO PRINCIPAL</h1>
+  </div>
+  <table class="table bg-warning table-bordered table-sm">
     <thead>
       <tr>
         <th class="quantidade" scope="col">QUANT</th>
@@ -36,30 +37,60 @@
     </thead>
     <tbody>
       <tr>
-        <td class="quantidade">2</td>
-        <td class="produto">MANUTENCAO PREVENTIVA</td>
-        <td class="unitario">R$50,00</td>
-        <td class="total">R$100,00</td>
+        <td class="quantidade">
+          <input id="quant1" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+        </td>
+        <td class="produto"><input size="50" type="text" maxlength="50" id="pro1"></td>
+        <td class="unitario">R$<input id="uni1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        <td class="total">R$<input id="tot1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
       </tr>
 
       <tr>
         <td class="quantidade">
-          <input id="quant1" type="text"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="4"
-            maxlength="4" />
+          <input id="quant2" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
         </td>
-        <td class="produto"><input size="50" type="text" name="" maxlength="50" id=""></td>
-        <td class="unitario">R$ <input id="quant1" type="text"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="10"
-            maxlength="10" /></td>
-        <td class="total">R$ <input id="quant1" type="text"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="10"
-            maxlength="10" /></td>
+        <td class="produto"><input size="50" type="text" maxlength="50" id="pro2"></td>
+        <td class="unitario">R$<input id="uni2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        <td class="total">R$<input id="tot2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+      </tr>
+
+      <tr>
+        <td class="quantidade">
+          <input id="quant3" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+        </td>
+        <td class="produto"><input size="50" type="text" maxlength="50" id="pro3"></td>
+        <td class="unitario">R$<input id="uni3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        <td class="total">R$<input id="tot3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+      </tr>
+
+      <tr>
+        <td class="quantidade">
+          <input id="quant4" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+        </td>
+        <td class="produto"><input size="50" type="text" maxlength="50" id="pro4"></td>
+        <td class="unitario">R$<input id="uni4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        <td class="total">R$<input id="tot4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+      </tr>
+
+      <tr>
+        <td class="quantidade">
+          <input id="quant5" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+        </td>
+        <td class="produto"><input size="50" type="text" maxlength="50" id="pro5"></td>
+        <td class="unitario">R$<input id="uni5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        <td class="total">R$<input id="tot5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+      </tr>
+
+      <tr>
+        <td class="quantidade">-</td>
+        <td class="produto">-</td>
+        <td class="unitario">-</td>
+        <td class="total">-</td>
       </tr>
 
       <tr>
         <td class="produto" colspan="3"></td>
-        <td>TOTAL</td>
+        <td><span id="totall">TOTAL</span></td>
       </tr>
     </tbody>
   </table>
@@ -90,6 +121,7 @@
 <!-- SCRIPTS -->
 <script src="./bootstrap.bundle.min.js"></script>
 <script src="./venda.js"></script>
+<script src="./mask.js"></script>
 </body>
 
 </html>
