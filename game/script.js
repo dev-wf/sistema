@@ -1,5 +1,6 @@
 console.log("script.js");
 
+
 /*================================================
 
 Polyfill
@@ -51,6 +52,8 @@ DOM Manipulation
 
 (function () {
     'use strict';
+
+
 
     function hasClass(elem, className) {
         return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -975,3 +978,8 @@ Game
     window.addEventListener('load', g.step, false);
 
 })();
+
+function sair() {
+    console.log('clicou');
+    window.location.href = "../main.html";
+}
