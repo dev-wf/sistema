@@ -11,13 +11,10 @@ body {
   padding: 1vh;
   margin: 1vh;
   color: var(--rosa);
-  height: 100px;
 }
 main {
   text-align: center;
-  max-width: 720px;
-  height: 600px;
-  background-color: #ffffff;
+  background-color: #f30000;
 }
 
 footer {
@@ -45,15 +42,28 @@ input {
   padding: 0;
   text-align: center;
 }
+
+.box {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.boxdiv {
+  width: 48rem;
+  height: 30rem;
+}
 .quantidade {
   max-width: 20px;
 }
 .produto {
-  max-width: 200px;
+  max-width: 100px;
 }
 .unitario {
   text-align: left;
-  max-width: 40px;
+  max-width: 20px;
 }
 .total {
   text-align: left;
@@ -62,6 +72,11 @@ input {
 .celular {
   display: none;
 }
+
+.trF {
+  font-size: 11pt;
+}
+
 /* Chrome e outros */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
