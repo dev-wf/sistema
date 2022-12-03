@@ -22,110 +22,114 @@
   <title>WF-Developer</title>
 
 </head>
-<main class="container">
-  <div class="container bg-info h-25 p-1">
-    <h1>CONTEUDO PRINCIPAL</h1>
+
+<body class="text-center">
+
+
+  <main class="container-sm">
+    <div class="container bg-info h-25 p-1">
+      <h1>CONTEUDO </h1>
+    </div>
+    <table class="table bg-warning table-bordered table-sm">
+      <thead>
+        <tr>
+          <th class="quantidade" scope="col">QUANT</th>
+          <th scope="col">PRODUTO/SERVIÇO</th>
+          <th scope="col">UNIT</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="quantidade">
+            <input id="quant1" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+          </td>
+          <td class="produto"><input size="50" type="text" maxlength="50" id="pro1"></td>
+          <td class="unitario">R$<input id="uni1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+          <td class="total">R$<input id="tot1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        </tr>
+
+        <tr>
+          <td class="quantidade">
+            <input id="quant2" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+          </td>
+          <td class="produto"><input size="50" type="text" maxlength="50" id="pro2"></td>
+          <td class="unitario">R$<input id="uni2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+          <td class="total">R$<input id="tot2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        </tr>
+
+        <tr>
+          <td class="quantidade">
+            <input id="quant3" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+          </td>
+          <td class="produto"><input size="50" type="text" maxlength="50" id="pro3"></td>
+          <td class="unitario">R$<input id="uni3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+          <td class="total">R$<input id="tot3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        </tr>
+
+        <tr>
+          <td class="quantidade">
+            <input id="quant4" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+          </td>
+          <td class="produto"><input size="50" type="text" maxlength="50" id="pro4"></td>
+          <td class="unitario">R$<input id="uni4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+          <td class="total">R$<input id="tot4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        </tr>
+
+        <tr>
+          <td class="quantidade">
+            <input id="quant5" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
+          </td>
+          <td class="produto"><input size="50" type="text" maxlength="50" id="pro5"></td>
+          <td class="unitario">R$<input id="uni5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+          <td class="total">R$<input id="tot5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
+        </tr>
+
+        <tr>
+          <td class="quantidade">-</td>
+          <td class="produto">-</td>
+          <td class="unitario">-</td>
+          <td class="total">-</td>
+        </tr>
+
+        <tr>
+          <td class="produto" colspan="3"></td>
+          <td><span id="totall">TOTAL</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+  </main>
+  <div class="text-center celular container-sm">
+    <h4>NAO SUPORTADO.</h4>
+    <p>ESSA PAGINA NAO FUNCIONA NO CELUALR OU TABLETS</p>
   </div>
-  <table class="table bg-warning table-bordered table-sm">
-    <thead>
-      <tr>
-        <th class="quantidade" scope="col">QUANT</th>
-        <th scope="col">PRODUTO/SERVIÇO</th>
-        <th scope="col">UNIT</th>
-        <th scope="col">TOTAL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="quantidade">
-          <input id="quant1" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
-        </td>
-        <td class="produto"><input size="50" type="text" maxlength="50" id="pro1"></td>
-        <td class="unitario">R$<input id="uni1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-        <td class="total">R$<input id="tot1" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-      </tr>
-
-      <tr>
-        <td class="quantidade">
-          <input id="quant2" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
-        </td>
-        <td class="produto"><input size="50" type="text" maxlength="50" id="pro2"></td>
-        <td class="unitario">R$<input id="uni2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-        <td class="total">R$<input id="tot2" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-      </tr>
-
-      <tr>
-        <td class="quantidade">
-          <input id="quant3" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
-        </td>
-        <td class="produto"><input size="50" type="text" maxlength="50" id="pro3"></td>
-        <td class="unitario">R$<input id="uni3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-        <td class="total">R$<input id="tot3" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-      </tr>
-
-      <tr>
-        <td class="quantidade">
-          <input id="quant4" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
-        </td>
-        <td class="produto"><input size="50" type="text" maxlength="50" id="pro4"></td>
-        <td class="unitario">R$<input id="uni4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-        <td class="total">R$<input id="tot4" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-      </tr>
-
-      <tr>
-        <td class="quantidade">
-          <input id="quant5" type="text" oninput="numberIs(this)" size="4" maxlength="4" />
-        </td>
-        <td class="produto"><input size="50" type="text" maxlength="50" id="pro5"></td>
-        <td class="unitario">R$<input id="uni5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-        <td class="total">R$<input id="tot5" type="text" oninput="numberIs(this)" size="8" maxlength="8" /></td>
-      </tr>
-
-      <tr>
-        <td class="quantidade">-</td>
-        <td class="produto">-</td>
-        <td class="unitario">-</td>
-        <td class="total">-</td>
-      </tr>
-
-      <tr>
-        <td class="produto" colspan="3"></td>
-        <td><span id="totall">TOTAL</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-</main>
-<div  class="text-center celular container-sm">
-  <h4>NAO SUPORTADO.</h4>
-  <p>ESSA PAGINA NAO FUNCIONA NO CELUALR OU TABLETS</p>
-</div>
-<br>
-<footer class="">
-  <button id="print">IMPRIMIR</button>
-  <script>
-    $("#print").click(function (e) {
-      $("#print").hide();
-      print();
-      e.preventDefault();
-    });
-  </script>
-  <p>Se você tiver alguma dúvida, entre em contato:<br>
-    <strong><a style="color: white;" href="mailto:w.a.f@outlook.com.br">w.a.f@outlook.com.br</a></strong>
-  </p>
-</footer>
+  <br>
+  <footer class="">
+    <button id="print">IMPRIMIR</button>
+    <script>
+      $("#print").click(function (e) {
+        $("#print").hide();
+        print();
+        e.preventDefault();
+      });
+    </script>
+    <p>Se você tiver alguma dúvida, entre em contato:<br>
+      <strong><a style="color: white;" href="mailto:w.a.f@outlook.com.br">w.a.f@outlook.com.br</a></strong>
+    </p>
+  </footer>
 
 
 
 
 
 
-<!-- SCRIPTS -->
-<script src="./bootstrap.bundle.min.js"></script>
-<script src="./venda.js"></script>
-<script src="./mask.js"></script>
+  <!-- SCRIPTS -->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./venda.js"></script>
+  <script src="./mask.js"></script>
 </body>
 
 </html>
