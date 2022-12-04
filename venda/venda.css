@@ -100,6 +100,11 @@ thead {
   flex-direction: column;
   align-content: center;
 }
+#inputVenda {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20pt;
+}
 .infoCliente {
   color: #000000;
   border-left: 1px solid black;
