@@ -15,6 +15,7 @@ body {
 main {
   text-align: center;
   background-color: #ffffff;
+  min-height: 40rem;
 }
 
 footer {
@@ -63,8 +64,7 @@ thead {
 .boxdiv {
   text-align: center;
   width: 50rem;
-  padding: 1rem;
-  height: 30rem;
+  border: 2px solid white;
 }
 .quantidade {
   max-width: 20px;
@@ -88,6 +88,25 @@ thead {
   font-size: 11pt;
 }
 
+.infoEmissor {
+  color: #000000;
+  display: flex;
+  border: 1px solid black;
+  height: 8.125rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+}
+.infoCliente {
+  color: #000000;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 8.125rem;
+}
 /* Chrome e outros */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

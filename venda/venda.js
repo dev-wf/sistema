@@ -14,12 +14,16 @@ function numberIs(a) {
 }
 
 
-$("#uni1").keyup(function (e) {
+$("#uni1").keydown(function (e) {
     //window.alert($("#uni1").val());
     $("#uni1").maskMoney({ thousands: '.', decimal: ',' });
 });
 
-$("#tot1").keyup(function (e) {
+$("#tot1").keydown(function (e) {
     //window.alert($("#uni1").val());
     $("#tot1").maskMoney({ thousands: '.', decimal: ',' });
 });
+
+function multi() {
+console.log('multi funcionando.');
+}
