@@ -61,7 +61,9 @@ thead {
 }
 
 .boxdiv {
-  width: 48rem;
+  text-align: center;
+  width: 50rem;
+  padding: 1rem;
   height: 30rem;
 }
 .quantidade {
