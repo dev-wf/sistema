@@ -124,7 +124,7 @@ input::-webkit-inner-spin-button {
 }
 
 /*  Telas menores que 600px */
-@media screen and (max-width: 47.813rem) {
+@media screen and (max-width: 47.994rem) {
   main {
     display: none;
   }
