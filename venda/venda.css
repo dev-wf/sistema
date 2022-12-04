@@ -86,12 +86,13 @@ thead {
 
 .trF {
   font-size: 11pt;
+  border-style: 1px solid black;
 }
 
 .infoEmissor {
   color: #000000;
   display: flex;
-  border: 1px solid black;
+  border: 2px solid black;
   height: 8.125rem;
   margin: 0;
   padding: 0;
@@ -109,9 +110,8 @@ thead {
   flex-wrap: nowrap;
 
   color: #000000;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
   height: 10rem;
   display: grid;
 }
