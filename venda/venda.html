@@ -59,44 +59,67 @@
     </div>
 
 
-    <div class=" infoCliente container-sm  text-center">
-      <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-        <div class="col  ">
-          <input type="text" value="Orçamento" id="inputVenda">
-        </div>
-      </div>
-      <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-        <div class="col ">
-          EMPRESA CLIENTE
-        </div>
-        <div class="col  ">
-          CPF/CNPJ
-        </div>
-      </div>
+    <div style="font-size: 12pt;" class=" infoCliente  container-sm  ">
 
       <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
         <div class="col  ">
-          endereco
+          <input maxlength="15" size="15" type="text" value="Orçamento" id="inputVenda">
         </div>
-        <div class="col  ">
-          cep
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-auto">
+          <div class="">
+            <span id=""><i class="bi bi-person"></i>CLIENTE:</span>
+            <input class="inputBorder" style="text-align: left;" maxlength="30" size="30" type="text"
+              placeholder="Nome do cliente">
+          </div>
         </div>
-        <div class="col  ">
-          cidade
+        <div class="col-sm-auto ">
+          <div class="">
+            <span id=""><i class="bi bi-check2-square"></i>CPF/CNPJ:</span>
+            <input class="inputBorder" style="text-align: left;" maxlength="20" size="20" type="text"
+              placeholder="CPF/CNPJ Cliente">
+          </div>
         </div>
       </div>
 
-      <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-        <div class="col  ">
-          telefone
+      <div class="row justify-content-around">
+        <div class="col-sm-auto">
+          <div class="">
+            <span id=""><i class="bi bi-geo-alt"></i><span>ENDEREÇO:</></span>
+              <input class="inputBorder" style="text-align: left;" maxlength="45" size="45" type="text"
+                placeholder="Endereço do Cliente">
+          </div>
         </div>
-        <div class="col  ">
-          email
+        <div class="col-sm-auto">
+          <div class="">
+            <span id=""><i class="bi bi-geo-alt"></i><span>CEP:</></span>
+              <input class="inputBorder" style="text-align: left;" maxlength="9" size="9" type="text"
+                placeholder="00000-000">
+          </div>
         </div>
-
       </div>
 
+      <div class="row justify-content-around">
+
+        <div class="col-sm-auto">
+          <div class="">&nbsp;&nbsp;
+            <span id=""><i class="bi bi-envelope-at"></i><span>EMAIL:</></span>
+              <input class="inputBorder" style="text-align: left;" maxlength="40" size="40" type="email"
+                placeholder="email@email.com">
+          </div>
+        </div>
+        &nbsp;
+        <div class="col-sm-auto">
+          <div class="">
+            <span id=""><i class="bi bi-whatsapp"></i><span>TEL:</></span>
+              <input class="inputBorder" style="text-align: left;" maxlength="13" size="13" type="text"
+                placeholder="(00)0000-0000">
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <br>
     <table class="table  table-sm">
@@ -179,6 +202,7 @@
     <script>
       $("#print").click(function (e) {
         $("#print").hide();
+        $(".inputBorder").css("border", "none");
         print();
         e.preventDefault();
       });

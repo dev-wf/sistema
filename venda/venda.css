@@ -106,12 +106,19 @@ thead {
   font-size: 20pt;
 }
 .infoCliente {
+  flex-wrap: nowrap;
+
   color: #000000;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  height: 8.125rem;
+  height: 10rem;
+  display: grid;
 }
+.inputBorder {
+  border: 1px solid black;
+}
+
 /* Chrome e outros */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
