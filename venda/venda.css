@@ -47,7 +47,7 @@ input {
 table,
 th,
 td {
-  border: 2px solid black;
+  border: 3px solid black;
 }
 thead {
   border-bottom: 3px solid rgb(0, 0, 0);
@@ -86,7 +86,6 @@ thead {
 
 .trF {
   font-size: 11pt;
-  border-style: 1px solid black;
 }
 
 .infoEmissor {
@@ -108,7 +107,6 @@ thead {
 }
 .infoCliente {
   flex-wrap: nowrap;
-
   color: #000000;
   border-left: 2px solid black;
   border-right: 2px solid black;
