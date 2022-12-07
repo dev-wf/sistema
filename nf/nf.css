@@ -1,0 +1,46 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: whitesmoke;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0.5rem;
+  background-color: rgb(30, 30, 30);
+  border: 0.125rem solid rgb(255, 0, 72);
+  width: 25rem;
+  height: 15rem;
+}
+.quadrado {
+  background-color: rgb(0, 157, 255);
+  border-radius: 0%;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+
+.circulo {
+  background-color: rgb(0, 157, 255);
+  clip-path: circle();
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 2rem solid rgb(0, 157, 255);
+  margin: 1rem;
+}
