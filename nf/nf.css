@@ -22,25 +22,22 @@ body {
 }
 .quadrado {
   background-color: rgb(0, 157, 255);
-  border-radius: 0%;
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   margin: 1rem;
 }
 
 .circulo {
+  flex-wrap: nowrap;
   background-color: rgb(0, 157, 255);
-  clip-path: circle();
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   margin: 1rem;
 }
 
 .triangulo {
-  width: 0;
-  height: 0;
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-bottom: 2rem solid rgb(0, 157, 255);
+  background-color: rgb(0, 157, 255);
+  width: 3rem;
+  height: 3rem;
   margin: 1rem;
 }
