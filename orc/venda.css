@@ -4,7 +4,6 @@ html,
 body {
   background: #171717;
   background: linear-gradient(to right, #121212, #222222);
-  font-family: "Kanit", sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -13,16 +12,17 @@ body {
   min-height: 100%;
   position: relative;
 }
-div.body-content {
+main {
   /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 footer {
+  font-family: "Kanit", sans-serif;
   text-align: center;
-  background: #ffab62;
+  border-top: 1px solid white;
+  background: transparent;
   width: 100%;
-  height: 100px;
+  height: 2rem;
   position: absolute;
   bottom: 0;
-  left: 0;
 }
