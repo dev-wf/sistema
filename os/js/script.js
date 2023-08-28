@@ -71,6 +71,7 @@ unit_10 = document.getElementById("lblUnit10");
 tot_10 = document.getElementById("lblTot10");
 
 res = document.getElementById("resultado");
+data = document.getElementById("dataH");
 
 
 function setID() {
@@ -459,11 +460,34 @@ function setBD() {
 
 
 }
+function Data() {
+    // let data_brasileira = data.val().split('-').reverse().join('/')
+    var hoje = new Date().toLocaleDateString();
+    //console.log(data_brasileira);
+    //console.log(hoje);
+    console.log($("#dataH").val());
+    if (data.value == '') {
+        console.log('DENTRO IF');
+        $("#dataH").val(hoje.toString('11/09/22'));
+    } else {
+        console.log('FORA IF');
+        $("#dataH").val(data.value.split('-').reverse().join('/'));
+    }
+
+
+
+    /*if (data.value === undefined) {
+        console.log('dentro do IF ');
+        data.value = hoje;
+    }*/
+
+}
 setBD();
 
 $("#btnPrint").click(function (e) {
     e.preventDefault();
-    console.log('Imprimindo..');
-    print();
+    Data();
+    console.log('Imprimindo.. ');
+    // print();
 });
 

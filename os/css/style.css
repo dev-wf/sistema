@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap");
 
 body {
+  background: #000000;
+  background: linear-gradient(to right, #161616, #0d0d0d);
   font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
@@ -18,17 +20,25 @@ table tr td {
 .contHead {
   width: 816px;
   max-width: 816px;
+  height: 200px;
+  max-height: 200px;
   border: solid 1px black;
 }
+.contHead table tr td {
+  border: none;
+}
+.contHead table tr td input {
+  border: none;
+}
+
 .box1 {
   display: grid;
   align-content: space-between;
   justify-items: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   width: 850px;
   max-width: 850px;
-  height: 200px;
   max-height: 200px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -53,6 +63,10 @@ table tr td {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
+}
+
+.button-print a {
+  color: white;
 }
 
 @media print {
