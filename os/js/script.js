@@ -71,7 +71,8 @@ unit_10 = document.getElementById("lblUnit10");
 tot_10 = document.getElementById("lblTot10");
 
 res = document.getElementById("resultado");
-data = document.getElementById("dataH");
+
+
 
 
 function setID() {
@@ -461,12 +462,43 @@ function setBD() {
 
 }
 
+/*
+function lblData() {
+    date = new Date();
+    const options = {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric" - 1,
+    }
+    var hoje = date.toLocaleDateString("pt-br", options);
+    console.log(hoje);
+    document.getElementById("lbldata").value = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+
+
+}
+*/
 setBD();
+function Data() {
+
+    const options = {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    }
+
+    $('#lbldata').val(new Date().toISOString().slice(0, 10));
+    //$('#lbldata').val(new Date().toISOString().slice(0, 10));
+
+}
+$(document).ready(function () {
+    Data();
+});
+
 
 $("#btnPrint").click(function (e) {
     e.preventDefault();
-    Data();
     console.log('Imprimindo.. ');
-    // print();
+    print();
 });
 
