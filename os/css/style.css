@@ -81,18 +81,14 @@ table tr td {
 
 @media (max-width: 850px) {
   /* smartphones, Android phones, landscape iPhone */
-  .celular {
-    scale: 50%;
-  }
+
 }
 
 @media print {
   .button-print {
     display: none;
   }
-  .celular {
-    scale: 100%;
-  }
+  
   .box1,
   .box2 {
     scale: 85%;

@@ -2,13 +2,13 @@
 
 html,
 body {
-  background: #171717;
-  background: linear-gradient(to right, #121212, #222222);
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: black;
 }
 #wrapper {
+  background-color: black;
   min-height: 100%;
   position: relative;
 }
