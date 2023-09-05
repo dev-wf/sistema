@@ -79,16 +79,30 @@ table tr td {
   height: 25px;
 }
 
+.quadrado {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+  width: 850px;
+  height: 600px;
+  background: #fff;
+}
+
 @media (max-width: 850px) {
   /* smartphones, Android phones, landscape iPhone */
-
 }
 
 @media print {
   .button-print {
     display: none;
   }
-  
+
   .box1,
   .box2 {
     scale: 85%;
