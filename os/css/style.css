@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap");
 
 body {
-  background: #000000;
-  background: linear-gradient(to right, #161616, #0d0d0d);
   font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
@@ -18,6 +16,7 @@ table tr td {
   flex-direction: column;
 }
 .contHead {
+  background-color: #fff;
   width: 816px;
   max-width: 816px;
   height: 200px;
@@ -99,6 +98,10 @@ table tr td {
 }
 
 @media print {
+  body {
+    background-color: white;
+  }
+
   .button-print {
     display: none;
   }
