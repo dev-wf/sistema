@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap");
 
+:root {
+  --rosa: hotpink;
+  --verde: rgb(0, 255, 55);
+  --azul: rgb(0, 80, 200);
+  --preto: black;
+}
+.rosa {
+  background: var(--rosa);
+}
+.verde {
+  background: var(--verde);
+}
+.azul {
+  background: var(--azul);
+}
+.preto {
+  background: var(--preto);
+  color: white;
+}
 body {
   background-color: rgb(20, 20, 20);
   font-family: "Roboto Mono", monospace;
@@ -7,27 +26,33 @@ body {
   padding: 0;
 }
 
+.l1 {
+  text-align: center;
+  text-justify: auto;
+  width: 200px;
+  height: 200px;
+}
+
 .quadrado {
+  margin-top: 10vh;
   width: 100vw;
   height: 100vh;
-  background: #6c7a89;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .box {
-  width: 850px;
-  height: 600px;
+  display: flex;
+  width: 800px;
+  height: 100px;
   background: #fff;
 }
+
 .mobile {
   display: none;
 }
-
 @media (max-width: 400px) {
   /* smartphones, Android phones, landscape iPhone */
-  .quadrado{
+  .quadrado {
     display: none;
   }
   .mobile {
